@@ -1,0 +1,253 @@
+/* Estilos generales */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+main {
+    flex: 1;
+    width: 100%; /* Asegura que el main ocupe todo el ancho disponible */
+    max-width: 1200px; /* Limita el ancho máximo del main para que el contenido no se extienda demasiado */
+    padding: 1em;
+}
+
+/* Estilo para el header y la navegación */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    width: 100%; /* Asegura que el header ocupe todo el ancho disponible */
+    max-width: 1200px; /* Limita el ancho máximo del header */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centra los elementos de navegación */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo para la sección hero de la página de inicio */
+.hero {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    max-width: 600px;
+}
+
+.search-form {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.search-form input[type="text"] {
+    width: 60%; /* Ajusta el tamaño de la barra de búsqueda */
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-width: 500px; /* Limita el ancho máximo de la barra de búsqueda */
+}
+
+.search-form button {
+    padding: 0.75em 1.5em;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-form button:hover {
+    background-color: #666;
+}
+
+.slogan {
+    margin: 1em 0;
+    font-style: italic;
+    text-align: center; /* Centra el texto del eslogan */
+}
+
+/* Estilos para las secciones de términos */
+.popular-terms, .recent-terms, .categories, .news {
+    text-align: center; /* Centra el texto dentro de la sección */
+    margin-bottom: 2em;
+}
+
+.popular-terms h2, .recent-terms h2, .categories h2, .news h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para la sección de administración */
+.admin-section {
+    padding: 1em;
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+.admin-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.admin-form {
+    flex: 1;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin: 0 auto; /* Centra el formulario dentro de su contenedor */
+}
+
+.admin-form h2 {
+    margin-top: 0;
+}
+
+.admin-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.admin-form input[type="text"],
+.admin-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.admin-form textarea {
+    height: 100px;
+}
+
+.admin-form button {
+    padding: 0.75em 1.5em;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.admin-form button:hover {
+    background-color: #666;
+}
+
+/* Estilo para la sección de contacto */
+.contact-section {
+    padding: 1em;
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-form {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 0.75em 1.5em;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #666;
+}
+
+.contact-info {
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+}

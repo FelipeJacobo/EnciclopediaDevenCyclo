@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta información básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página -->
+    <title>DevEncyclo - Administración</title>
+    
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="terminos.html">Términos</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="administracion.html">Administración</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Sección de administración de términos y categorías -->
+        <section class="admin-section">
+            <h1>Gestión de Términos y Categorías</h1>
+
+            <!-- Controles de administración para términos -->
+            <div class="admin-controls">
+                <!-- Formulario para agregar un nuevo término -->
+                <div class="admin-form">
+                    <h2>Agregar Término</h2>
+                    <form>
+                        <label for="term-name">Nombre del Término:</label>
+                        <input type="text" id="term-name" name="term-name">
+                        <label for="term-definition">Definición:</label>
+                        <textarea id="term-definition" name="term-definition"></textarea>
+                        <button type="submit">Agregar</button>
+                    </form>
+                </div>
+
+                <!-- Formulario para editar un término existente -->
+                <div class="admin-form">
+                    <h2>Editar Término</h2>
+                    <form>
+                        <label for="edit-term-name">Nombre del Término:</label>
+                        <input type="text" id="edit-term-name" name="edit-term-name">
+                        <label for="edit-term-definition">Definición:</label>
+                        <textarea id="edit-term-definition" name="edit-term-definition"></textarea>
+                        <button type="submit">Editar</button>
+                    </form>
+                </div>
+
+                <!-- Formulario para eliminar un término -->
+                <div class="admin-form">
+                    <h2>Eliminar Término</h2>
+                    <form>
+                        <label for="delete-term-name">Nombre del Término:</label>
+                        <input type="text" id="delete-term-name" name="delete-term-name">
+                        <button type="submit">Eliminar</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Controles de administración para categorías -->
+            <div class="admin-controls">
+                <!-- Formulario para agregar una nueva categoría -->
+                <div class="admin-form">
+                    <h2>Agregar Categoría</h2>
+                    <form>
+                        <label for="category-name">Nombre de la Categoría:</label>
+                        <input type="text" id="category-name" name="category-name">
+                        <button type="submit">Agregar</button>
+                    </form>
+                </div>
+
+                <!-- Formulario para editar una categoría existente -->
+                <div class="admin-form">
+                    <h2>Editar Categoría</h2>
+                    <form>
+                        <label for="edit-category-name">Nombre de la Categoría:</label>
+                        <input type="text" id="edit-category-name" name="edit-category-name">
+                        <button type="submit">Editar</button>
+                    </form>
+                </div>
+
+                <!-- Formulario para eliminar una categoría -->
+                <div class="admin-form">
+                    <h2>Eliminar Categoría</h2>
+                    <form>
+                        <label for="delete-category-name">Nombre de la Categoría:</label>
+                        <input type="text" id="delete-category-name" name="delete-category-name">
+                        <button type="submit">Eliminar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 DevEncyclo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
