@@ -10,10 +10,18 @@
     
     <!-- Enlace al archivo de estilos CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Enlace al icono -->
+    <link rel="icon" href="img/icono.PNG" type="image/png">
+
 </head>
 <body>
     <!-- Encabezado de la página -->
     <header>
+        <!-- Contenedor del logo -->
+        <div class="logo-container">
+            <img src="img/Logo.PNG" alt="Logo de DevEncyclo" class="logo">
+        </div>
         <!-- Menú de navegación -->
         <nav>
             <ul>
@@ -30,13 +38,12 @@
     <main>
         <!-- Sección principal con imagen de logo y formulario de búsqueda -->
         <section class="hero">
-            <img src="img/Logo.png" alt="Logo de DevEncyclo" class="logo">
             <div class="search-form">
                 <input type="text" placeholder="Buscar términos...">
                 <button>Buscar</button>
             </div>
             <div class="slogan">
-                <p>La enciclopedia de desarrollo de software para todos los niveles.</p>
+                <p>Una enciclopedia integral de desarrollo de software, diseñada para usuarios de todos los niveles de experiencia.</p>
             </div>
         </section>
 
@@ -44,19 +51,20 @@
         <section class="popular-terms">
             <h2>Términos Populares</h2>
             <ul>
-                <li><a href="#">Término 1</a></li>
-                <li><a href="#">Término 2</a></li>
-                <li><a href="#">Término 3</a></li>
+                <li><a href="#"><span class="term">Agile</span>: Una metodología de desarrollo de software que promueve el trabajo colaborativo y la entrega continua de valor a través de iteraciones cortas y adaptativas.</a></li>
+                <li><a href="#"><span class="term">API (Application Programming Interface)</span>: Un conjunto de herramientas y definiciones que permiten a los desarrolladores interactuar con aplicaciones o servicios para intercambiar información y funcionalidades.</a></li>
+                <li><a href="#"><span class="term">DevOps</span>: Una práctica que combina el desarrollo de software (Dev) y las operaciones de TI (Ops) para mejorar la colaboración y acelerar la entrega de aplicaciones.</a></li>
             </ul>
         </section>
 
         <!-- Sección de términos recientes -->
-        <section class="recent-terms">
+        <section class="popular-terms">
             <h2>Términos Recientes</h2>
             <ul>
-                <li><a href="#">Término A</a></li>
-                <li><a href="#">Término B</a></li>
-                <li><a href="#">Término C</a></li>
+                <li><a href="#"><span class="term">Cloud Computing</span>: El uso de servicios de computación (almacenamiento, servidores, bases de datos) a través de la nube.</a></li>
+                <li><a href="#"><span class="term">Machine Learning</span>: Un subcampo de la inteligencia artificial que permite que las máquinas aprendan a partir de datos sin ser programadas explícitamente.</a></li>
+                <li><a href="#"><span class="term">Blockchain</span>: Tecnología que garantiza la seguridad de transacciones digitales a través de una cadena de bloques distribuidos.</a></li>
+                <!-- Otros ítems -->
             </ul>
         </section>
 
@@ -64,16 +72,16 @@
         <section class="categories">
             <h2>Categorías</h2>
             <ul>
-                <li><a href="#">Categoría 1</a></li>
-                <li><a href="#">Categoría 2</a></li>
-                <li><a href="#">Categoría 3</a></li>
+                <li><a href="#">Desarrollo Web</a></li>
+                <li><a href="#">Inteligencia Artificial</a></li>
+                <li><a href="#">Seguridad Informática</a></li>
             </ul>
         </section>
 
         <!-- Sección de últimas noticias -->
         <section class="news">
             <h2>Últimas Noticias</h2>
-            <p>Lee nuestras últimas actualizaciones y artículos.</p>
+            <p>Lee nuestras últimas actualizaciones y artículos sobre el desarrollo de software, inteligencia artificial y más.</p>
             <a href="#">Leer más</a>
         </section>
     </main>
@@ -82,5 +90,7 @@
     <footer>
         <p>&copy; 2024 DevEncyclo. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="js/search.js"></script>
 </body>
 </html>

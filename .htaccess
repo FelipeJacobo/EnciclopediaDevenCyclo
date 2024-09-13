@@ -1,0 +1,29 @@
+# Forzar HTTPS para todo el tráfico (si no está activado ya)
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirigir la raíz del dominio a index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ /index.html [L]
+
+# Asegúrate de que los archivos de imagen (png, jpg, gif, etc.) se sirvan correctamente
+<FilesMatch "\.(png|jpg|jpeg|gif|bmp|svg)$">
+    Require all granted
+</FilesMatch>
+
+# Habilitar caché para archivos estáticos para mejorar el rendimiento
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+
+# Manejo de errores personalizados
+ErrorDocument 403 https://errors.infinityfree.net/errors/403/
+ErrorDocument 404 https://errors.infinityfree.net/errors/404/
+ErrorDocument 500 https://errors.infinityfree.net/errors/500/
